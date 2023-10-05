@@ -1,0 +1,29 @@
+FileVersion = 1
+
+[Project]
+Name = "pkkg"
+StartupObject = "pkkg.Program"
+
+[Configs.Debug.Win32]
+PreprocessorMacros = ["LOG_TRACE"]
+
+[Configs.Debug.Win64]
+PreprocessorMacros = ["LOG_TRACE", "DEBUG"]
+
+[Configs.Release.Win32]
+PreprocessorMacros = ["LOG_TRACE"]
+
+[Configs.Release.Win64]
+PreprocessorMacros = ["LOG_TRACE"]
+
+[Configs.Paranoid.Win32]
+PreprocessorMacros = ["LOG_TRACE"]
+
+[Configs.Paranoid.Win64]
+PreprocessorMacros = ["LOG_TRACE"]
+
+[Configs.Test.Win32]
+PreprocessorMacros = ["LOG_TRACE"]
+
+[Configs.Test.Win64]
+PreprocessorMacros = ["LOG_TRACE"]

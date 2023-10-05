@@ -1,0 +1,30 @@
+Pkkg - Almost a package manager
+Version: 1.0.0
+Author: Booklordofthedings
+Description: This file explains the layout of the pkkg package managing system
+
+Package/Library/Program contains configuration file storing all data
+config {
+	name
+	version
+	author
+	dependencies {
+		//Direct dependencies required for this specific project
+		{
+			name
+			version
+			source
+		}
+	}
+}
+
+pkkg help
+pkkg new
+pkkg install //Installs local version
+pkkg add "name" --version 1.0.0 --source "https"
+
+a dependencies
+ o -
+  l name []
+  c ver Version []
+  l source []
